@@ -1,38 +1,132 @@
+/* <div className="App">
+<div className="container">
+  <div className="flex-top">
+    <div className="left-picture"></div>
+    <div className="right-picture"></div>
+  </div>
+  <div className="flex-bottom">
+    <button className="selectBtn"></button>
+    <button className="selectBtn"></button>
+    <button className="selectBtn"></button>
+  </div>
+</div>
+</div> */
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  width: 100%;
+  background-color: aliceblue;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.container {
+  box-sizing: border-box;
+  width: 90%;
+  max-width: 700px;
+  height: auto;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: forestgreen;
+  border-bottom: 2px solid white;
+}
+.flex-header > * {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: white;
+}
+/* YOU AND PC SECTION */
+.flex-toppest {
+  display: flex;
+  align-items: center;
+  background-color: forestgreen;
+}
+.flex-toppest > * {
+  width: 50%;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bolder;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.flex-top {
+  background-color: chartreuse;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-bottom {
+  display: flex;
+  justify-content: space-between;
+  background-color: forestgreen;
+  padding: 2rem 0rem;
+}
+.left-btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+}
+.right-btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+.selectBtn {
+  padding: 0.4rem 1.2rem;
+  font-size: 1rem;
+  width: 90px;
+  cursor: pointer;
+}
+.startBtn {
+  padding: 0.4rem 1.2rem;
+  font-size: 1rem;
+  width: 90px;
+  background-color: rgb(66, 140, 201);
+  color: white;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.startBtn:hover {
+  background-color: rgb(84, 132, 173);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pictureDiv {
+  padding: 3rem;
+}
+.myImg {
+  width: 100%;
+  height: auto;
+}
+.stateDiv {
+  background-color: chartreuse;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  padding: 0.5rem 0rem;
+}
+.scoreDiv {
+  background-color: forestgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  padding: 0.5rem 0rem;
+}
+.yellowbg {
+  background-color: yellow;
+}
+.redbg {
+  background-color: rgb(199, 53, 53);
 }
