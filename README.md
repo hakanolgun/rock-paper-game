@@ -1,3 +1,11 @@
+# Rock, Paper, Scissor Game - ReactJS
+
+See live: [https://rockpapergame-hakan.netlify.app/](https://rockpapergame-hakan.netlify.app/)
+
+<img src="./src/gamephoto.png" width="100%" align="center">
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
